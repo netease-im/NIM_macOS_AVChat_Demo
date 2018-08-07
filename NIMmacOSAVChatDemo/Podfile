@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+platform :osx, '10.12'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'NIMmacOSAVChatDemo' do
+
+pod 'CocoaLumberjack', '~> 2.2.0'
+
+end
+

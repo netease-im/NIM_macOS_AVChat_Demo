@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NTESChatNotificationController">
+            <connections>
+                <outlet property="inviteLabel" destination="J7v-ly-TnQ" id="swa-fc-7tk"/>
+                <outlet property="peerLabel" destination="fbq-Bn-4ur" id="Vrj-yN-ilo"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="398"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WxI-CH-HwO">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="398"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="netcallsmall_bg" id="m9T-iy-oFG"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fbq-Bn-4ur">
+                    <rect key="frame" x="80" y="221" width="150" height="37"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="对方名称" id="gYc-gF-ACM">
+                        <font key="font" size="36" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L6X-4Y-YiI">
+                    <rect key="frame" x="75" y="30" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="aUJ-3K-j9z"/>
+                        <constraint firstAttribute="width" constant="60" id="yI3-Pr-zlX"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="accept_n" imagePosition="overlaps" alignment="center" alternateImage="accept_p" imageScaling="proportionallyDown" inset="2" id="hcW-wN-5Mp">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="accept:" target="-2" id="Aog-qi-g5W"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J7v-ly-TnQ">
+                    <rect key="frame" x="124" y="195" width="62" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="邀请通话" id="l8s-IK-xaF">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kd1-0E-6TL">
+                    <rect key="frame" x="175" y="30" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="DFb-4d-gvX"/>
+                        <constraint firstAttribute="width" constant="60" id="pAA-LI-hbE"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hangup_n" imagePosition="only" alignment="center" alternateImage="hangup_p" imageScaling="proportionallyDown" inset="2" id="NwH-LV-Kf8">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="refuse:" target="-2" id="6Ta-3v-Y4J"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WxI-CH-HwO" secondAttribute="bottom" id="0pN-44-OzT"/>
+                <constraint firstAttribute="trailing" secondItem="WxI-CH-HwO" secondAttribute="trailing" id="37Q-no-82e"/>
+                <constraint firstAttribute="bottom" secondItem="kd1-0E-6TL" secondAttribute="bottom" constant="30" id="7UG-HA-QkB"/>
+                <constraint firstItem="J7v-ly-TnQ" firstAttribute="centerX" secondItem="fbq-Bn-4ur" secondAttribute="centerX" id="7mw-4d-Xqi"/>
+                <constraint firstItem="L6X-4Y-YiI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="75" id="BX8-0O-TVU"/>
+                <constraint firstAttribute="trailing" secondItem="kd1-0E-6TL" secondAttribute="trailing" constant="75" id="Doq-Zc-cae"/>
+                <constraint firstAttribute="bottom" secondItem="L6X-4Y-YiI" secondAttribute="bottom" constant="30" id="GOf-v4-Hig"/>
+                <constraint firstItem="fbq-Bn-4ur" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="140" id="M7x-ah-I1L"/>
+                <constraint firstItem="WxI-CH-HwO" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Soq-F2-Pga"/>
+                <constraint firstItem="WxI-CH-HwO" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="cD3-gG-id3"/>
+                <constraint firstItem="J7v-ly-TnQ" firstAttribute="top" secondItem="fbq-Bn-4ur" secondAttribute="bottom" constant="9" id="lkt-Uw-Sqb"/>
+                <constraint firstItem="fbq-Bn-4ur" firstAttribute="centerX" secondItem="WxI-CH-HwO" secondAttribute="centerX" id="zZW-uR-lWO"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="167.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="accept_n" width="60" height="60"/>
+        <image name="accept_p" width="60" height="60"/>
+        <image name="hangup_n" width="60" height="60"/>
+        <image name="hangup_p" width="60" height="60"/>
+        <image name="netcallsmall_bg" width="310" height="398"/>
+    </resources>
+</document>

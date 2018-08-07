@@ -1,0 +1,29 @@
+//
+//  NIMmacOSAVChatDemo.pch
+//  NIMmacOSAVChatDemo
+//
+//  Created by Simon Blue on 2018/6/1.
+//  Copyright © 2018年 netease. All rights reserved.
+//
+
+#ifndef NIMmacOSAVChatDemo_pch
+#define NIMmacOSAVChatDemo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <NIMSDK/NIMSDK.h>
+#import <NIMAVChat/NIMAVChat.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "NTESGlobalMacro.h"
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelAll;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelAll;
+#endif
+
+#endif
+
+#endif /* NIMmacOSAVChatDemo_pch */

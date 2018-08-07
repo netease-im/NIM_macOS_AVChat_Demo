@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NTESLoginViewController">
+            <connections>
+                <outlet property="loginBtn" destination="YM9-Wl-o37" id="b7j-gL-P5P"/>
+                <outlet property="passwordLine" destination="Ngf-GN-HYb" id="gNA-bO-Sxa"/>
+                <outlet property="passwordTextField" destination="Z5B-hh-VR2" id="5rI-tL-J8T"/>
+                <outlet property="usernameLine" destination="nTC-xK-awG" id="DAD-We-WBe"/>
+                <outlet property="usernameTextField" destination="X6Q-Bl-VhS" id="Kil-s5-Goc"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="358"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <secureTextField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z5B-hh-VR2">
+                    <rect key="frame" x="30" y="97" width="190" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="m2x-r7-UOh"/>
+                    </constraints>
+                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" alignment="left" placeholderString="输入密码" drawsBackground="YES" usesSingleLineMode="YES" id="70I-YV-JQx">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </secureTextFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="VdH-21-Xti"/>
+                    </connections>
+                </secureTextField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="nTC-xK-awG">
+                    <rect key="frame" x="30" y="137" width="190" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="HnM-q1-Spd"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ngf-GN-HYb">
+                    <rect key="frame" x="30" y="96" width="190" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="T6S-6n-vtk"/>
+                    </constraints>
+                </customView>
+                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X6Q-Bl-VhS">
+                    <rect key="frame" x="30" y="138" width="190" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="LRp-CQ-Cbo"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" alignment="left" placeholderString="输入账号" drawsBackground="YES" id="Cfx-y6-sPY">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="10D-df-LEn"/>
+                    </connections>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sJy-1A-vAJ">
+                    <rect key="frame" x="75" y="218" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1AS-3b-LG6"/>
+                        <constraint firstAttribute="height" constant="100" id="XGq-oV-oer"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="u25-lL-FYS"/>
+                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YM9-Wl-o37">
+                    <rect key="frame" x="30" y="27" width="190" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="kLM-lN-507"/>
+                        <constraint firstAttribute="width" constant="190" id="xr1-hj-4rx"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="登陆" bezelStyle="rounded" image="startBtn_n" imagePosition="overlaps" alignment="center" alternateImage="startBtn_p" imageScaling="axesIndependently" inset="2" id="R85-9t-4uM" customClass="NTESButtonCell">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onTouchLogin:" target="-2" id="gk3-n9-bUv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Z5B-hh-VR2" firstAttribute="top" secondItem="nTC-xK-awG" secondAttribute="bottom" constant="20" id="1Z3-lm-K0Q"/>
+                <constraint firstItem="YM9-Wl-o37" firstAttribute="top" secondItem="Z5B-hh-VR2" secondAttribute="bottom" constant="30" id="1iG-1M-RIv"/>
+                <constraint firstItem="nTC-xK-awG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="30" id="56m-MD-5JV"/>
+                <constraint firstAttribute="trailing" secondItem="X6Q-Bl-VhS" secondAttribute="trailing" constant="30" id="AqQ-OO-PWN"/>
+                <constraint firstItem="sJy-1A-vAJ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="40" id="Fia-dR-1NO"/>
+                <constraint firstItem="Ngf-GN-HYb" firstAttribute="top" secondItem="Z5B-hh-VR2" secondAttribute="bottom" id="LS2-wk-6eK"/>
+                <constraint firstItem="Ngf-GN-HYb" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="30" id="Nhz-oj-Wly"/>
+                <constraint firstAttribute="trailing" secondItem="nTC-xK-awG" secondAttribute="trailing" constant="30" id="UXb-Zo-pKm"/>
+                <constraint firstItem="Z5B-hh-VR2" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="30" id="VMW-gl-HCq"/>
+                <constraint firstItem="sJy-1A-vAJ" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="jB1-xD-fQR"/>
+                <constraint firstItem="YM9-Wl-o37" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="lTp-82-e32"/>
+                <constraint firstAttribute="trailing" secondItem="Z5B-hh-VR2" secondAttribute="trailing" constant="30" id="mzj-PE-Gqk"/>
+                <constraint firstAttribute="trailing" secondItem="Ngf-GN-HYb" secondAttribute="trailing" constant="30" id="pZp-wq-AcO"/>
+                <constraint firstItem="X6Q-Bl-VhS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="30" id="paS-l5-Kgw"/>
+                <constraint firstItem="X6Q-Bl-VhS" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="200" id="wYP-at-wOt"/>
+                <constraint firstItem="nTC-xK-awG" firstAttribute="top" secondItem="X6Q-Bl-VhS" secondAttribute="bottom" id="xRh-Fa-cFM"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="logo" width="100" height="100"/>
+        <image name="startBtn_n" width="190" height="40"/>
+        <image name="startBtn_p" width="190" height="40"/>
+    </resources>
+</document>

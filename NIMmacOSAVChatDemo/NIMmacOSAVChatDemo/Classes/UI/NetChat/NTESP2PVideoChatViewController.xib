@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NTESP2PVideoChatViewController">
+            <connections>
+                <outlet property="beautifyLabel" destination="Dub-tX-omR" id="Zdx-ac-gdf"/>
+                <outlet property="beautyBtn" destination="C4d-LX-DdC" id="hzn-7v-xsp"/>
+                <outlet property="bgView" destination="rB1-XN-nOY" id="xxM-g0-bMH"/>
+                <outlet property="bigView" destination="CYH-3o-1Vw" id="jlj-gn-vFS"/>
+                <outlet property="cameraBtn" destination="SZ5-6y-i6t" id="LdN-9O-7dc"/>
+                <outlet property="cameraLabel" destination="lK8-DY-Dbw" id="kBP-op-Qgg"/>
+                <outlet property="cancelBtn" destination="Kq8-yY-HTr" id="msm-30-izN"/>
+                <outlet property="durationLabel" destination="tQM-Ko-7Fa" id="DzS-vw-F7p"/>
+                <outlet property="hangUpBtn" destination="GS5-BQ-QgY" id="E1c-7O-TpU"/>
+                <outlet property="hangupLabel" destination="yVy-1p-zCe" id="wUr-B1-hUJ"/>
+                <outlet property="localPreview" destination="gVV-tO-fgn" id="idt-gL-vWe"/>
+                <outlet property="micLabel" destination="Xfi-Rs-8vO" id="xU3-uZ-o8D"/>
+                <outlet property="micMuteBtn" destination="z5x-gl-P6u" id="O2g-IK-S2n"/>
+                <outlet property="peerLabel" destination="y9J-VK-eSr" id="dkx-qk-Kod"/>
+                <outlet property="smallView" destination="gVV-tO-fgn" id="jQh-V4-mev"/>
+                <outlet property="switchModeBtn" destination="6fE-cx-wE9" id="4JL-n8-Yhh"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="waitingLabel" destination="joU-fb-VKK" id="iLJ-gj-Yp2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="1100" height="620"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="CYH-3o-1Vw" customClass="NTESRemoteVideoView">
+                    <rect key="frame" x="0.0" y="0.0" width="1100" height="620"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rB1-XN-nOY">
+                            <rect key="frame" x="0.0" y="0.0" width="1100" height="620"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="netcallbig_bg" id="rC2-yz-xcA"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="joU-fb-VKK">
+                            <rect key="frame" x="513" y="285" width="74" height="18"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="等待接听..." drawsBackground="YES" id="OIK-gn-0FK">
+                                <font key="font" size="14" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y9J-VK-eSr">
+                            <rect key="frame" x="548" y="383" width="4" height="37"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="aa3-2R-rsW">
+                                <font key="font" size="36" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tQM-Ko-7Fa">
+                            <rect key="frame" x="530" y="182" width="41" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00" id="MhO-RQ-EgD">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z5x-gl-P6u">
+                            <rect key="frame" x="385" y="50" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="QbH-e8-JpG"/>
+                                <constraint firstAttribute="width" constant="60" id="pKO-dX-LFJ"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="mic_on_n" imagePosition="overlaps" alignment="center" alternateImage="mic_on_p" imageScaling="proportionallyDown" inset="2" id="l0a-LN-bas">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="micMute:" target="-2" id="iLC-Vy-bS3"/>
+                            </connections>
+                        </button>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="gVV-tO-fgn">
+                            <rect key="frame" x="922" y="492" width="150" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="4gP-T8-M22"/>
+                                <constraint firstAttribute="width" constant="150" id="aCj-qe-IXb"/>
+                            </constraints>
+                        </customView>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SZ5-6y-i6t">
+                            <rect key="frame" x="475" y="50" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="3XY-mf-XSm"/>
+                                <constraint firstAttribute="height" constant="60" id="d9R-uR-aP0"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="camera_on_n" imagePosition="overlaps" alignment="center" alternateImage="camera_on_p" imageScaling="proportionallyDown" inset="2" id="LbL-qI-rCR">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="disabledCamera:" target="-2" id="LZD-2J-2Ew"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C4d-LX-DdC">
+                            <rect key="frame" x="565" y="50" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="nsk-Mq-5TS"/>
+                                <constraint firstAttribute="height" constant="60" id="y62-lf-crd"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="beautify_n" imagePosition="only" alignment="center" alternateImage="beautify_p" imageScaling="proportionallyDown" inset="2" id="fAk-Od-bUL">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="beautify:" target="-2" id="h23-lW-GXT"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kq8-yY-HTr">
+                            <rect key="frame" x="520" y="50" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="Pev-nl-8LV"/>
+                                <constraint firstAttribute="height" constant="60" id="nfV-8G-cPg"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hangup_n" imagePosition="overlaps" alignment="center" alternateImage="hangup_p" imageScaling="proportionallyDown" inset="2" id="9fn-1P-vuS">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="cancel:" target="-2" id="u56-6k-GAF"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GS5-BQ-QgY">
+                            <rect key="frame" x="655" y="50" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="IgI-bA-pcr"/>
+                                <constraint firstAttribute="height" constant="60" id="nrM-OP-MfN"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hangup_n" imagePosition="overlaps" alignment="center" alternateImage="hangup_p" imageScaling="proportionallyDown" inset="2" id="sVe-xU-jxV">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="hangUp:" target="-2" id="MRf-Ac-nwQ"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6fE-cx-wE9">
+                            <rect key="frame" x="8" y="560" width="106" height="32"/>
+                            <buttonCell key="cell" type="bevel" title="切换语音通话" bezelStyle="rounded" image="switch_bg" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="0zv-t7-ni3">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="switchChatModel:" target="-2" id="Ezf-eY-sm9"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xfi-Rs-8vO">
+                            <rect key="frame" x="393" y="20" width="44" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="麦克风" id="8UQ-t0-tvF">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lK8-DY-Dbw">
+                            <rect key="frame" x="483" y="20" width="44" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="摄像头" id="9UA-s5-Zl2">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dub-tX-omR">
+                            <rect key="frame" x="580" y="20" width="31" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="美颜" id="NRT-zA-IFd">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yVy-1p-zCe">
+                            <rect key="frame" x="670" y="20" width="31" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="挂断" id="7ko-yA-3ze">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="6fE-cx-wE9" firstAttribute="top" secondItem="CYH-3o-1Vw" secondAttribute="top" constant="28" id="2HG-dJ-Inm"/>
+                        <constraint firstAttribute="bottom" secondItem="yVy-1p-zCe" secondAttribute="bottom" constant="20" id="5f4-jY-4Si"/>
+                        <constraint firstAttribute="bottom" secondItem="rB1-XN-nOY" secondAttribute="bottom" id="6nw-Fx-V1X"/>
+                        <constraint firstAttribute="trailing" secondItem="rB1-XN-nOY" secondAttribute="trailing" id="7QQ-lm-Sl8"/>
+                        <constraint firstItem="tQM-Ko-7Fa" firstAttribute="top" secondItem="joU-fb-VKK" secondAttribute="bottom" constant="86" id="8II-hB-jCm"/>
+                        <constraint firstAttribute="bottom" secondItem="Xfi-Rs-8vO" secondAttribute="bottom" constant="20" id="8Ui-k8-cTn"/>
+                        <constraint firstItem="6fE-cx-wE9" firstAttribute="leading" secondItem="CYH-3o-1Vw" secondAttribute="leading" constant="8" id="B5L-il-gFQ"/>
+                        <constraint firstItem="Xfi-Rs-8vO" firstAttribute="centerX" secondItem="z5x-gl-P6u" secondAttribute="centerX" id="BcR-d7-OhZ"/>
+                        <constraint firstItem="rB1-XN-nOY" firstAttribute="top" secondItem="CYH-3o-1Vw" secondAttribute="top" id="Cft-AB-WWc"/>
+                        <constraint firstItem="Kq8-yY-HTr" firstAttribute="centerX" secondItem="CYH-3o-1Vw" secondAttribute="centerX" id="D6z-Pu-wkf"/>
+                        <constraint firstAttribute="bottom" secondItem="z5x-gl-P6u" secondAttribute="bottom" constant="50" id="DO2-PM-DTw"/>
+                        <constraint firstAttribute="bottom" secondItem="lK8-DY-Dbw" secondAttribute="bottom" constant="20" id="DZf-Vy-sTV"/>
+                        <constraint firstItem="joU-fb-VKK" firstAttribute="centerX" secondItem="CYH-3o-1Vw" secondAttribute="centerX" id="GtE-jJ-FbB"/>
+                        <constraint firstItem="Dub-tX-omR" firstAttribute="centerX" secondItem="C4d-LX-DdC" secondAttribute="centerX" id="HEF-TE-q67"/>
+                        <constraint firstItem="rB1-XN-nOY" firstAttribute="leading" secondItem="CYH-3o-1Vw" secondAttribute="leading" id="JJw-YG-tGn"/>
+                        <constraint firstItem="joU-fb-VKK" firstAttribute="top" secondItem="y9J-VK-eSr" secondAttribute="bottom" constant="80" id="Juu-iV-aIE"/>
+                        <constraint firstItem="tQM-Ko-7Fa" firstAttribute="centerX" secondItem="CYH-3o-1Vw" secondAttribute="centerX" id="N9W-Xh-xAi"/>
+                        <constraint firstItem="yVy-1p-zCe" firstAttribute="centerX" secondItem="GS5-BQ-QgY" secondAttribute="centerX" id="NOG-1v-DjL"/>
+                        <constraint firstAttribute="bottom" secondItem="Kq8-yY-HTr" secondAttribute="bottom" constant="50" id="NhT-am-VhB"/>
+                        <constraint firstAttribute="bottom" secondItem="C4d-LX-DdC" secondAttribute="bottom" constant="50" id="R32-JD-lwp"/>
+                        <constraint firstAttribute="bottom" secondItem="GS5-BQ-QgY" secondAttribute="bottom" constant="50" id="REu-Tz-Jyf"/>
+                        <constraint firstItem="lK8-DY-Dbw" firstAttribute="centerX" secondItem="SZ5-6y-i6t" secondAttribute="centerX" id="Rew-tO-6lD"/>
+                        <constraint firstItem="rB1-XN-nOY" firstAttribute="top" secondItem="CYH-3o-1Vw" secondAttribute="top" id="TRV-d9-s6w"/>
+                        <constraint firstItem="C4d-LX-DdC" firstAttribute="leading" secondItem="Kq8-yY-HTr" secondAttribute="trailing" constant="-15" id="VsZ-mp-ZeI"/>
+                        <constraint firstItem="SZ5-6y-i6t" firstAttribute="leading" secondItem="z5x-gl-P6u" secondAttribute="trailing" constant="30" id="YgP-zj-bbg"/>
+                        <constraint firstItem="y9J-VK-eSr" firstAttribute="centerX" secondItem="CYH-3o-1Vw" secondAttribute="centerX" id="ZdB-sq-R2p"/>
+                        <constraint firstItem="C4d-LX-DdC" firstAttribute="leading" secondItem="SZ5-6y-i6t" secondAttribute="trailing" constant="30" id="Zf3-ZK-Hxa"/>
+                        <constraint firstItem="rB1-XN-nOY" firstAttribute="leading" secondItem="CYH-3o-1Vw" secondAttribute="leading" id="aYb-dY-ExL"/>
+                        <constraint firstItem="y9J-VK-eSr" firstAttribute="top" secondItem="CYH-3o-1Vw" secondAttribute="top" constant="200" id="bhp-Dh-Mbb"/>
+                        <constraint firstItem="gVV-tO-fgn" firstAttribute="top" secondItem="CYH-3o-1Vw" secondAttribute="top" constant="28" id="e0E-L2-tNt"/>
+                        <constraint firstAttribute="bottom" secondItem="rB1-XN-nOY" secondAttribute="bottom" id="fNJ-zu-mAw"/>
+                        <constraint firstAttribute="trailing" secondItem="rB1-XN-nOY" secondAttribute="trailing" id="gVj-kS-pXl"/>
+                        <constraint firstAttribute="bottom" secondItem="Dub-tX-omR" secondAttribute="bottom" constant="20" id="ij6-zH-dMh"/>
+                        <constraint firstItem="GS5-BQ-QgY" firstAttribute="leading" secondItem="C4d-LX-DdC" secondAttribute="trailing" constant="30" id="j4V-Vw-ak6"/>
+                        <constraint firstAttribute="trailing" secondItem="gVV-tO-fgn" secondAttribute="trailing" constant="28" id="ucZ-Ll-4Oj"/>
+                        <constraint firstAttribute="bottom" secondItem="SZ5-6y-i6t" secondAttribute="bottom" constant="50" id="wHL-tI-pvC"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CYH-3o-1Vw" secondAttribute="bottom" id="4an-Wl-Rzh"/>
+                <constraint firstItem="CYH-3o-1Vw" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="IcJ-L7-Hew"/>
+                <constraint firstItem="CYH-3o-1Vw" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="YSj-qe-y6z"/>
+                <constraint firstAttribute="trailing" secondItem="CYH-3o-1Vw" secondAttribute="trailing" id="uN1-nb-Hdi"/>
+            </constraints>
+            <point key="canvasLocation" x="-328" y="7"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="beautify_n" width="60" height="60"/>
+        <image name="beautify_p" width="60" height="60"/>
+        <image name="camera_on_n" width="60" height="60"/>
+        <image name="camera_on_p" width="60" height="60"/>
+        <image name="hangup_n" width="60" height="60"/>
+        <image name="hangup_p" width="60" height="60"/>
+        <image name="mic_on_n" width="60" height="60"/>
+        <image name="mic_on_p" width="60" height="60"/>
+        <image name="netcallbig_bg" width="1000" height="620"/>
+        <image name="switch_bg" width="106" height="26"/>
+    </resources>
+</document>

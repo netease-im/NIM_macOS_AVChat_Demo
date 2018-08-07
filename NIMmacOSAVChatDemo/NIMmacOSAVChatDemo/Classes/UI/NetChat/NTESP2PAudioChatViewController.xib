@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NTESP2PAudioChatViewController">
+            <connections>
+                <outlet property="bgView" destination="SAW-jE-D22" id="2Ig-j3-chL"/>
+                <outlet property="cancelBtn" destination="sKr-n2-vDQ" id="kNL-AS-Dpn"/>
+                <outlet property="durationLabel" destination="um7-VH-JBN" id="yce-KU-MKM"/>
+                <outlet property="hangUpBtn" destination="Jac-2m-p4p" id="lzX-MI-8bW"/>
+                <outlet property="hangupLabel" destination="EqV-c1-VYa" id="17X-5r-sbu"/>
+                <outlet property="micMuteBtn" destination="wXS-Tc-Vee" id="9W1-zd-yq8"/>
+                <outlet property="miclabel" destination="w9l-r2-7lB" id="3G7-NR-6f3"/>
+                <outlet property="peerLabel" destination="G3Z-9q-jFl" id="XfT-8X-0a0"/>
+                <outlet property="switchModeBtn" destination="FWm-gp-t0q" id="hmr-8p-8gl"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="waitingLabel" destination="DTZ-5Q-nej" id="Apc-El-NOT"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="398"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-jE-D22">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="398"/>
+                    <imageCell key="cell" lineBreakMode="charWrapping" refusesFirstResponder="YES" alignment="left" imageAlignment="topLeft" imageScaling="proportionallyUpOrDown" image="netcallsmall_bg" id="FBd-pg-2oZ"/>
+                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sKr-n2-vDQ">
+                    <rect key="frame" x="125" y="30" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="f2K-6E-GEs"/>
+                        <constraint firstAttribute="height" constant="60" id="xIB-vq-yRP"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hangup_n" imagePosition="overlaps" alignment="center" alternateImage="hangup_p" imageScaling="proportionallyDown" inset="2" id="qYX-eU-V0F">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="cancel:" target="-2" id="189-YC-Cwe"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wXS-Tc-Vee">
+                    <rect key="frame" x="75" y="50" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="4uG-00-Ygu"/>
+                        <constraint firstAttribute="width" constant="60" id="D2L-4p-cgK"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="mic_on_n" imagePosition="overlaps" alignment="center" alternateImage="mic_on_p" imageScaling="proportionallyDown" inset="2" id="GCE-PC-MGw">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="micMute:" target="-2" id="Rm4-GB-G8s"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-2m-p4p">
+                    <rect key="frame" x="175" y="50" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="EJP-4g-Ug3"/>
+                        <constraint firstAttribute="height" constant="60" id="jif-CB-3JN"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hangup_n" imagePosition="only" alignment="center" alternateImage="hangup_p" imageScaling="proportionallyDown" inset="2" id="cif-Qu-2Uq">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hangUp:" target="-2" id="bYy-eB-DK7"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FWm-gp-t0q">
+                    <rect key="frame" x="8" y="338" width="106" height="32"/>
+                    <buttonCell key="cell" type="bevel" title="切换视频通话" bezelStyle="rounded" image="switch_bg" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="SDy-br-xex">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="switchChatMode:" target="-2" id="RC3-Ir-4KG"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-9q-jFl">
+                    <rect key="frame" x="80" y="221" width="150" height="37"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="对方名称" id="9iM-8h-kBQ">
+                        <font key="font" size="36" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DTZ-5Q-nej">
+                    <rect key="frame" x="116" y="194" width="78" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="等待接听..." id="2ta-OO-tEZ">
+                        <font key="font" size="14" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="um7-VH-JBN">
+                    <rect key="frame" x="135" y="195" width="41" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00" id="ijl-Be-vcV">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w9l-r2-7lB">
+                    <rect key="frame" x="83" y="20" width="44" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="麦克风" id="tKX-xR-sL0">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EqV-c1-VYa">
+                    <rect key="frame" x="190" y="20" width="31" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="挂断" id="0D7-Ec-0G1">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sKr-n2-vDQ" firstAttribute="leading" secondItem="wXS-Tc-Vee" secondAttribute="trailing" constant="-10" id="0Ti-Ox-zka"/>
+                <constraint firstAttribute="bottom" secondItem="sKr-n2-vDQ" secondAttribute="bottom" constant="30" id="0VL-9U-GDr"/>
+                <constraint firstItem="um7-VH-JBN" firstAttribute="centerX" secondItem="G3Z-9q-jFl" secondAttribute="centerX" id="2fI-LV-znP"/>
+                <constraint firstItem="um7-VH-JBN" firstAttribute="top" secondItem="G3Z-9q-jFl" secondAttribute="bottom" constant="9" id="3w5-vw-omD"/>
+                <constraint firstItem="SAW-jE-D22" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="4va-pc-hGy"/>
+                <constraint firstAttribute="bottom" secondItem="Jac-2m-p4p" secondAttribute="bottom" constant="50" id="6dr-3x-3bG"/>
+                <constraint firstAttribute="trailing" secondItem="SAW-jE-D22" secondAttribute="trailing" id="Azk-3A-em5"/>
+                <constraint firstAttribute="bottom" secondItem="w9l-r2-7lB" secondAttribute="bottom" constant="20" id="HsY-2j-3pI"/>
+                <constraint firstItem="G3Z-9q-jFl" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="140" id="Obk-oz-ub7"/>
+                <constraint firstItem="Jac-2m-p4p" firstAttribute="leading" secondItem="sKr-n2-vDQ" secondAttribute="trailing" constant="-10" id="T00-9I-7T8"/>
+                <constraint firstAttribute="bottom" secondItem="wXS-Tc-Vee" secondAttribute="bottom" constant="50" id="WLU-Jz-5Ws"/>
+                <constraint firstItem="sKr-n2-vDQ" firstAttribute="centerX" secondItem="DTZ-5Q-nej" secondAttribute="centerX" id="WYJ-Xp-Ue1"/>
+                <constraint firstItem="w9l-r2-7lB" firstAttribute="centerX" secondItem="wXS-Tc-Vee" secondAttribute="centerX" id="WpB-gj-wAM"/>
+                <constraint firstAttribute="bottom" secondItem="EqV-c1-VYa" secondAttribute="bottom" constant="20" id="b54-cF-f48"/>
+                <constraint firstItem="FWm-gp-t0q" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="fGn-b3-NKl"/>
+                <constraint firstAttribute="bottom" secondItem="SAW-jE-D22" secondAttribute="bottom" id="grK-7f-3Tl"/>
+                <constraint firstItem="FWm-gp-t0q" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="28" id="ksC-AT-5Ng"/>
+                <constraint firstItem="DTZ-5Q-nej" firstAttribute="centerX" secondItem="G3Z-9q-jFl" secondAttribute="centerX" id="tMS-we-8Lw"/>
+                <constraint firstItem="SAW-jE-D22" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="uGp-QC-805"/>
+                <constraint firstItem="DTZ-5Q-nej" firstAttribute="top" secondItem="G3Z-9q-jFl" secondAttribute="bottom" constant="9" id="xWx-Fv-hiT"/>
+                <constraint firstItem="G3Z-9q-jFl" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="yuJ-x3-QKk"/>
+                <constraint firstItem="EqV-c1-VYa" firstAttribute="centerX" secondItem="Jac-2m-p4p" secondAttribute="centerX" id="zgU-kv-z4u"/>
+            </constraints>
+            <point key="canvasLocation" x="149" y="184"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="hangup_n" width="60" height="60"/>
+        <image name="hangup_p" width="60" height="60"/>
+        <image name="mic_on_n" width="60" height="60"/>
+        <image name="mic_on_p" width="60" height="60"/>
+        <image name="netcallsmall_bg" width="310" height="398"/>
+        <image name="switch_bg" width="106" height="26"/>
+    </resources>
+</document>

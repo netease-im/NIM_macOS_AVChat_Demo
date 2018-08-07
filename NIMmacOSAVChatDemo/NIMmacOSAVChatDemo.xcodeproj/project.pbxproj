@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EF5AE57C1D37EC6C051948 /* libPods-NIMmacOSAVChatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A943E39F0439BB95CAA83ECE /* libPods-NIMmacOSAVChatDemo.a */; };
+		90072C4520C51FFA004B64BA /* NTESRemoteVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90072C4420C51FFA004B64BA /* NTESRemoteVideoView.m */; };
+		90072C5F20C533D1004B64BA /* NTESP2PVideoChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90072C5D20C533D1004B64BA /* NTESP2PVideoChatViewController.m */; };
+		90072C6020C533D1004B64BA /* NTESP2PVideoChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90072C5E20C533D1004B64BA /* NTESP2PVideoChatViewController.xib */; };
+		900CBCE020BF9A4F0090AF74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 900CBCDF20BF9A4F0090AF74 /* AppDelegate.m */; };
+		900CBCE220BF9A500090AF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900CBCE120BF9A500090AF74 /* Assets.xcassets */; };
+		900CBCE520BF9A500090AF74 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900CBCE320BF9A500090AF74 /* MainMenu.xib */; };
+		900CBCE820BF9A500090AF74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 900CBCE720BF9A500090AF74 /* main.m */; };
+		900CBD1F20BFD6390090AF74 /* NTESDemoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 900CBD1C20BFD6390090AF74 /* NTESDemoConfig.m */; };
+		900CBD3620BFEBE40090AF74 /* NTESLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900CBD3420BFEBE40090AF74 /* NTESLoginViewController.m */; };
+		900CBD3720BFEBE40090AF74 /* NTESLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900CBD3520BFEBE40090AF74 /* NTESLoginViewController.xib */; };
+		900CBD4220BFF35E0090AF74 /* NSString+NTES.m in Sources */ = {isa = PBXBuildFile; fileRef = 900CBD3C20BFF35E0090AF74 /* NSString+NTES.m */; };
+		90550A7120CA51B300757D7D /* NSDictionary+NTESJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 90550A7020CA51B300757D7D /* NSDictionary+NTESJson.m */; };
+		90550A7520CA72CC00757D7D /* NTESMeetingCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 90550A7320CA72CC00757D7D /* NTESMeetingCollectionViewItem.m */; };
+		90550A7620CA72CC00757D7D /* NTESMeetingCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90550A7420CA72CC00757D7D /* NTESMeetingCollectionViewItem.xib */; };
+		9055F6F620C8CD2200757D7D /* NTESTimerHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9055F6F420C8CD2100757D7D /* NTESTimerHolder.m */; };
+		90809827210570B400331E21 /* NTESLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90809825210570B300331E21 /* NTESLogManager.m */; };
+		9083B0DB20CF671300C0AA19 /* video_connect_chat_tip_sender.aac in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0D320CF671200C0AA19 /* video_connect_chat_tip_sender.aac */; };
+		9083B0DC20CF671300C0AA19 /* video_chat_tip_OnCall.aac in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0D420CF671200C0AA19 /* video_chat_tip_OnCall.aac */; };
+		9083B0DD20CF671300C0AA19 /* video_chat_tip_sender.aac in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0D520CF671200C0AA19 /* video_chat_tip_sender.aac */; };
+		9083B0DE20CF671300C0AA19 /* video_chat_tip_HangUp.aac in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0D620CF671200C0AA19 /* video_chat_tip_HangUp.aac */; };
+		9083B0DF20CF671300C0AA19 /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0D720CF671200C0AA19 /* message.wav */; };
+		9083B0E020CF671300C0AA19 /* video_chat_tip_receiver.aac in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0D820CF671200C0AA19 /* video_chat_tip_receiver.aac */; };
+		9083B0E120CF671300C0AA19 /* video_chat_tip_onTimer.aac in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0D920CF671200C0AA19 /* video_chat_tip_onTimer.aac */; };
+		9083B0E220CF671300C0AA19 /* video_chat_push.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9083B0DA20CF671200C0AA19 /* video_chat_push.mp3 */; };
+		908661F120D9F11100F2329A /* NSView+NTESToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 908661F020D9F11100F2329A /* NSView+NTESToast.m */; };
+		9095C39F21193ABB00FDF988 /* NMCVideoFilter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9095C39921193ABB00FDF988 /* NMCVideoFilter.bundle */; };
+		9095C3A021193ABB00FDF988 /* NVS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39B21193ABB00FDF988 /* NVS.framework */; };
+		9095C3A121193ABB00FDF988 /* NIMAVChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39C21193ABB00FDF988 /* NIMAVChat.framework */; };
+		9095C3A221193ABB00FDF988 /* NIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39E21193ABB00FDF988 /* NIMSDK.framework */; };
+		9095C3A321193B3F00FDF988 /* NVS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39B21193ABB00FDF988 /* NVS.framework */; };
+		9095C3A421193B3F00FDF988 /* NVS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39B21193ABB00FDF988 /* NVS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9095C3A521193B3F00FDF988 /* NIMAVChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39C21193ABB00FDF988 /* NIMAVChat.framework */; };
+		9095C3A621193B3F00FDF988 /* NIMAVChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39C21193ABB00FDF988 /* NIMAVChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9095C3A721193B3F00FDF988 /* NIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39E21193ABB00FDF988 /* NIMSDK.framework */; };
+		9095C3A821193B3F00FDF988 /* NIMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9095C39E21193ABB00FDF988 /* NIMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		909EF32220FD82C8004D6F00 /* NTESButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 909EF32120FD82C8004D6F00 /* NTESButtonCell.m */; };
+		909EF32520FDD48A004D6F00 /* NTESPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 909EF32420FDD48A004D6F00 /* NTESPopUpButton.m */; };
+		90DFB34120C12006002C5CD3 /* NTESSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFB33B20C12005002C5CD3 /* NTESSelectViewController.m */; };
+		90DFB34220C12006002C5CD3 /* NTESSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DFB33C20C12005002C5CD3 /* NTESSelectViewController.xib */; };
+		90DFB34320C12006002C5CD3 /* NTESMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFB33D20C12005002C5CD3 /* NTESMainWindowController.m */; };
+		90DFB34420C12006002C5CD3 /* NTESMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DFB33F20C12005002C5CD3 /* NTESMainWindowController.xib */; };
+		90DFB34820C12010002C5CD3 /* NTESLaunchWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFB34520C12010002C5CD3 /* NTESLaunchWindowController.m */; };
+		90DFB34920C12010002C5CD3 /* NTESLaunchWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DFB34720C12010002C5CD3 /* NTESLaunchWindowController.xib */; };
+		90DFB34C20C12170002C5CD3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DFB34B20C12170002C5CD3 /* libc++.tbd */; };
+		90DFB34E20C12185002C5CD3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DFB34D20C12185002C5CD3 /* libstdc++.tbd */; };
+		90DFB35820C12AA0002C5CD3 /* NTESMeetingChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFB35620C12AA0002C5CD3 /* NTESMeetingChatViewController.m */; };
+		90DFB35920C12AA0002C5CD3 /* NTESMeetingChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DFB35720C12AA0002C5CD3 /* NTESMeetingChatViewController.xib */; };
+		90DFB36C20C13BAF002C5CD3 /* NTESLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFB36A20C13BAE002C5CD3 /* NTESLoginManager.m */; };
+		90DFB37020C13CA5002C5CD3 /* NTESFileLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFB36F20C13CA5002C5CD3 /* NTESFileLocationHelper.m */; };
+		90DFB37320C142CF002C5CD3 /* NTESWindowContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFB37220C142CF002C5CD3 /* NTESWindowContext.m */; };
+		90F989F120C78B1700069ACB /* NTESChatNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F989EF20C78B1700069ACB /* NTESChatNotificationController.m */; };
+		90F989F220C78B1700069ACB /* NTESChatNotificationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F989F020C78B1700069ACB /* NTESChatNotificationController.xib */; };
+		90F989F520C78CC900069ACB /* NTESNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F989F420C78CC900069ACB /* NTESNotificationCenter.m */; };
+		90F989F920C7C2B100069ACB /* NTESP2PAudioChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F989F720C7C2B000069ACB /* NTESP2PAudioChatViewController.m */; };
+		90F989FA20C7C2B100069ACB /* NTESP2PAudioChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F989F820C7C2B000069ACB /* NTESP2PAudioChatViewController.xib */; };
+		90F989FE20C7C58B00069ACB /* NTESP2PChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F989FC20C7C58B00069ACB /* NTESP2PChatViewController.m */; };
+		90F989FF20C7C58B00069ACB /* NTESP2PChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F989FD20C7C58B00069ACB /* NTESP2PChatViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		900CBD1120BFA21E0090AF74 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9095C3A821193B3F00FDF988 /* NIMSDK.framework in Embed Frameworks */,
+				9095C3A621193B3F00FDF988 /* NIMAVChat.framework in Embed Frameworks */,
+				9095C3A421193B3F00FDF988 /* NVS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02859FC13B6BF8DFAF59EF7F /* Pods-NIMmacOSAVChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMmacOSAVChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NIMmacOSAVChatDemo/Pods-NIMmacOSAVChatDemo.release.xcconfig"; sourceTree = "<group>"; };
+		07827FE438DD32B874BFDC67 /* Pods-NIMmacOSAVChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMmacOSAVChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIMmacOSAVChatDemo/Pods-NIMmacOSAVChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		90072C4320C51FFA004B64BA /* NTESRemoteVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESRemoteVideoView.h; sourceTree = "<group>"; };
+		90072C4420C51FFA004B64BA /* NTESRemoteVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESRemoteVideoView.m; sourceTree = "<group>"; };
+		90072C5C20C533D1004B64BA /* NTESP2PVideoChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESP2PVideoChatViewController.h; sourceTree = "<group>"; };
+		90072C5D20C533D1004B64BA /* NTESP2PVideoChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESP2PVideoChatViewController.m; sourceTree = "<group>"; };
+		90072C5E20C533D1004B64BA /* NTESP2PVideoChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTESP2PVideoChatViewController.xib; sourceTree = "<group>"; };
+		900CBCDB20BF9A4F0090AF74 /* NIMmacOSAVChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIMmacOSAVChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		900CBCDE20BF9A4F0090AF74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		900CBCDF20BF9A4F0090AF74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		900CBCE120BF9A500090AF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		900CBCE420BF9A500090AF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		900CBCE620BF9A500090AF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		900CBCE720BF9A500090AF74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		900CBCE920BF9A500090AF74 /* NIMmacOSAVChatDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NIMmacOSAVChatDemo.entitlements; sourceTree = "<group>"; };
+		900CBD1920BFD6390090AF74 /* NTESDemoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESDemoConfig.h; sourceTree = "<group>"; };
+		900CBD1C20BFD6390090AF74 /* NTESDemoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESDemoConfig.m; sourceTree = "<group>"; };
+		900CBD3320BFEBE40090AF74 /* NTESLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESLoginViewController.h; sourceTree = "<group>"; };
+		900CBD3420BFEBE40090AF74 /* NTESLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESLoginViewController.m; sourceTree = "<group>"; };
+		900CBD3520BFEBE40090AF74 /* NTESLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTESLoginViewController.xib; sourceTree = "<group>"; };
+		900CBD3C20BFF35E0090AF74 /* NSString+NTES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NTES.m"; sourceTree = "<group>"; };
+		900CBD3D20BFF35E0090AF74 /* NSString+NTES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NTES.h"; sourceTree = "<group>"; };
+		90550A6F20CA51B300757D7D /* NSDictionary+NTESJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NTESJson.h"; sourceTree = "<group>"; };
+		90550A7020CA51B300757D7D /* NSDictionary+NTESJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NTESJson.m"; sourceTree = "<group>"; };
+		90550A7220CA72CC00757D7D /* NTESMeetingCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESMeetingCollectionViewItem.h; sourceTree = "<group>"; };
+		90550A7320CA72CC00757D7D /* NTESMeetingCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESMeetingCollectionViewItem.m; sourceTree = "<group>"; };
+		90550A7420CA72CC00757D7D /* NTESMeetingCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTESMeetingCollectionViewItem.xib; sourceTree = "<group>"; };
+		9055F6F420C8CD2100757D7D /* NTESTimerHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESTimerHolder.m; sourceTree = "<group>"; };
+		9055F6F520C8CD2200757D7D /* NTESTimerHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESTimerHolder.h; sourceTree = "<group>"; };
+		90809825210570B300331E21 /* NTESLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESLogManager.m; sourceTree = "<group>"; };
+		90809826210570B400331E21 /* NTESLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESLogManager.h; sourceTree = "<group>"; };
+		9083B0D320CF671200C0AA19 /* video_connect_chat_tip_sender.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_connect_chat_tip_sender.aac; sourceTree = "<group>"; };
+		9083B0D420CF671200C0AA19 /* video_chat_tip_OnCall.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_chat_tip_OnCall.aac; sourceTree = "<group>"; };
+		9083B0D520CF671200C0AA19 /* video_chat_tip_sender.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_chat_tip_sender.aac; sourceTree = "<group>"; };
+		9083B0D620CF671200C0AA19 /* video_chat_tip_HangUp.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_chat_tip_HangUp.aac; sourceTree = "<group>"; };
+		9083B0D720CF671200C0AA19 /* message.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = message.wav; sourceTree = "<group>"; };
+		9083B0D820CF671200C0AA19 /* video_chat_tip_receiver.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_chat_tip_receiver.aac; sourceTree = "<group>"; };
+		9083B0D920CF671200C0AA19 /* video_chat_tip_onTimer.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_chat_tip_onTimer.aac; sourceTree = "<group>"; };
+		9083B0DA20CF671200C0AA19 /* video_chat_push.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = video_chat_push.mp3; sourceTree = "<group>"; };
+		908661EF20D9F11100F2329A /* NSView+NTESToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+NTESToast.h"; sourceTree = "<group>"; };
+		908661F020D9F11100F2329A /* NSView+NTESToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+NTESToast.m"; sourceTree = "<group>"; };
+		9095C39921193ABB00FDF988 /* NMCVideoFilter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NMCVideoFilter.bundle; sourceTree = "<group>"; };
+		9095C39B21193ABB00FDF988 /* NVS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NVS.framework; sourceTree = "<group>"; };
+		9095C39C21193ABB00FDF988 /* NIMAVChat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NIMAVChat.framework; sourceTree = "<group>"; };
+		9095C39E21193ABB00FDF988 /* NIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NIMSDK.framework; sourceTree = "<group>"; };
+		909EF32020FD82C8004D6F00 /* NTESButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESButtonCell.h; sourceTree = "<group>"; };
+		909EF32120FD82C8004D6F00 /* NTESButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESButtonCell.m; sourceTree = "<group>"; };
+		909EF32320FDD48A004D6F00 /* NTESPopUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESPopUpButton.h; sourceTree = "<group>"; };
+		909EF32420FDD48A004D6F00 /* NTESPopUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESPopUpButton.m; sourceTree = "<group>"; };
+		90DA320A20F5D854002C6112 /* NTESGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESGlobalMacro.h; sourceTree = "<group>"; };
+		90DFB33B20C12005002C5CD3 /* NTESSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESSelectViewController.m; sourceTree = "<group>"; };
+		90DFB33C20C12005002C5CD3 /* NTESSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTESSelectViewController.xib; sourceTree = "<group>"; };
+		90DFB33D20C12005002C5CD3 /* NTESMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESMainWindowController.m; sourceTree = "<group>"; };
+		90DFB33E20C12005002C5CD3 /* NTESSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESSelectViewController.h; sourceTree = "<group>"; };
+		90DFB33F20C12005002C5CD3 /* NTESMainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTESMainWindowController.xib; sourceTree = "<group>"; };
+		90DFB34020C12005002C5CD3 /* NTESMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESMainWindowController.h; sourceTree = "<group>"; };
+		90DFB34520C12010002C5CD3 /* NTESLaunchWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESLaunchWindowController.m; sourceTree = "<group>"; };
+		90DFB34620C12010002C5CD3 /* NTESLaunchWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESLaunchWindowController.h; sourceTree = "<group>"; };
+		90DFB34720C12010002C5CD3 /* NTESLaunchWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTESLaunchWindowController.xib; sourceTree = "<group>"; };
+		90DFB34A20C1204A002C5CD3 /* NIMmacOSAVChatDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMmacOSAVChatDemo.pch; sourceTree = "<group>"; };
+		90DFB34B20C12170002C5CD3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		90DFB34D20C12185002C5CD3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		90DFB35520C12AA0002C5CD3 /* NTESMeetingChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESMeetingChatViewController.h; sourceTree = "<group>"; };
+		90DFB35620C12AA0002C5CD3 /* NTESMeetingChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESMeetingChatViewController.m; sourceTree = "<group>"; };
+		90DFB35720C12AA0002C5CD3 /* NTESMeetingChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTESMeetingChatViewController.xib; sourceTree = "<group>"; };
+		90DFB36820C13BAE002C5CD3 /* NTESLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESLoginManager.h; sourceTree = "<group>"; };
+		90DFB36A20C13BAE002C5CD3 /* NTESLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESLoginManager.m; sourceTree = "<group>"; };
+		90DFB36E20C13CA5002C5CD3 /* NTESFileLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESFileLocationHelper.h; sourceTree = "<group>"; };
+		90DFB36F20C13CA5002C5CD3 /* NTESFileLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESFileLocationHelper.m; sourceTree = "<group>"; };
+		90DFB37120C142CF002C5CD3 /* NTESWindowContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESWindowContext.h; sourceTree = "<group>"; };
+		90DFB37220C142CF002C5CD3 /* NTESWindowContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESWindowContext.m; sourceTree = "<group>"; };
+		90F989EE20C78B1700069ACB /* NTESChatNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESChatNotificationController.h; sourceTree = "<group>"; };
+		90F989EF20C78B1700069ACB /* NTESChatNotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESChatNotificationController.m; sourceTree = "<group>"; };
+		90F989F020C78B1700069ACB /* NTESChatNotificationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTESChatNotificationController.xib; sourceTree = "<group>"; };
+		90F989F320C78CC900069ACB /* NTESNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESNotificationCenter.h; sourceTree = "<group>"; };
+		90F989F420C78CC900069ACB /* NTESNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESNotificationCenter.m; sourceTree = "<group>"; };
+		90F989F620C7C2B000069ACB /* NTESP2PAudioChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESP2PAudioChatViewController.h; sourceTree = "<group>"; };
+		90F989F720C7C2B000069ACB /* NTESP2PAudioChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESP2PAudioChatViewController.m; sourceTree = "<group>"; };
+		90F989F820C7C2B000069ACB /* NTESP2PAudioChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTESP2PAudioChatViewController.xib; sourceTree = "<group>"; };
+		90F989FB20C7C58B00069ACB /* NTESP2PChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESP2PChatViewController.h; sourceTree = "<group>"; };
+		90F989FC20C7C58B00069ACB /* NTESP2PChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESP2PChatViewController.m; sourceTree = "<group>"; };
+		90F989FD20C7C58B00069ACB /* NTESP2PChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NTESP2PChatViewController.xib; sourceTree = "<group>"; };
+		A943E39F0439BB95CAA83ECE /* libPods-NIMmacOSAVChatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NIMmacOSAVChatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		900CBCD820BF9A4F0090AF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9095C3A221193ABB00FDF988 /* NIMSDK.framework in Frameworks */,
+				9095C3A021193ABB00FDF988 /* NVS.framework in Frameworks */,
+				9095C3A521193B3F00FDF988 /* NIMAVChat.framework in Frameworks */,
+				9095C3A721193B3F00FDF988 /* NIMSDK.framework in Frameworks */,
+				90DFB34E20C12185002C5CD3 /* libstdc++.tbd in Frameworks */,
+				9095C3A321193B3F00FDF988 /* NVS.framework in Frameworks */,
+				90DFB34C20C12170002C5CD3 /* libc++.tbd in Frameworks */,
+				01EF5AE57C1D37EC6C051948 /* libPods-NIMmacOSAVChatDemo.a in Frameworks */,
+				9095C3A121193ABB00FDF988 /* NIMAVChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14406FCBD2D4A92C6902EF8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07827FE438DD32B874BFDC67 /* Pods-NIMmacOSAVChatDemo.debug.xcconfig */,
+				02859FC13B6BF8DFAF59EF7F /* Pods-NIMmacOSAVChatDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90072C4220C51FDD004B64BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90072C4320C51FFA004B64BA /* NTESRemoteVideoView.h */,
+				90072C4420C51FFA004B64BA /* NTESRemoteVideoView.m */,
+				90550A7220CA72CC00757D7D /* NTESMeetingCollectionViewItem.h */,
+				90550A7320CA72CC00757D7D /* NTESMeetingCollectionViewItem.m */,
+				90550A7420CA72CC00757D7D /* NTESMeetingCollectionViewItem.xib */,
+				909EF32020FD82C8004D6F00 /* NTESButtonCell.h */,
+				909EF32120FD82C8004D6F00 /* NTESButtonCell.m */,
+				909EF32320FDD48A004D6F00 /* NTESPopUpButton.h */,
+				909EF32420FDD48A004D6F00 /* NTESPopUpButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		900CBCD220BF9A4F0090AF74 = {
+			isa = PBXGroup;
+			children = (
+				900CBCDD20BF9A4F0090AF74 /* NIMmacOSAVChatDemo */,
+				900CBCDC20BF9A4F0090AF74 /* Products */,
+				14406FCBD2D4A92C6902EF8C /* Pods */,
+				BC9AEB4C3BE5898C3AC51F5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		900CBCDC20BF9A4F0090AF74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				900CBCDB20BF9A4F0090AF74 /* NIMmacOSAVChatDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		900CBCDD20BF9A4F0090AF74 /* NIMmacOSAVChatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9095C39521193ABB00FDF988 /* Vendors */,
+				9083B0D120CF671200C0AA19 /* Supporting Files */,
+				900CBD3A20BFF2790090AF74 /* Classes */,
+				900CBCDE20BF9A4F0090AF74 /* AppDelegate.h */,
+				900CBCDF20BF9A4F0090AF74 /* AppDelegate.m */,
+				90DA320A20F5D854002C6112 /* NTESGlobalMacro.h */,
+				900CBCE120BF9A500090AF74 /* Assets.xcassets */,
+				900CBCE320BF9A500090AF74 /* MainMenu.xib */,
+				900CBCE620BF9A500090AF74 /* Info.plist */,
+				900CBCE720BF9A500090AF74 /* main.m */,
+				90DFB34A20C1204A002C5CD3 /* NIMmacOSAVChatDemo.pch */,
+				900CBCE920BF9A500090AF74 /* NIMmacOSAVChatDemo.entitlements */,
+			);
+			path = NIMmacOSAVChatDemo;
+			sourceTree = "<group>";
+		};
+		900CBD1620BFD6390090AF74 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				900CBD1720BFD6390090AF74 /* ServerConfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		900CBD1720BFD6390090AF74 /* ServerConfig */ = {
+			isa = PBXGroup;
+			children = (
+				900CBD1920BFD6390090AF74 /* NTESDemoConfig.h */,
+				900CBD1C20BFD6390090AF74 /* NTESDemoConfig.m */,
+			);
+			path = ServerConfig;
+			sourceTree = "<group>";
+		};
+		900CBD3920BFEBFF0090AF74 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				90DFB34620C12010002C5CD3 /* NTESLaunchWindowController.h */,
+				90DFB34520C12010002C5CD3 /* NTESLaunchWindowController.m */,
+				90DFB34720C12010002C5CD3 /* NTESLaunchWindowController.xib */,
+				900CBD3320BFEBE40090AF74 /* NTESLoginViewController.h */,
+				900CBD3420BFEBE40090AF74 /* NTESLoginViewController.m */,
+				900CBD3520BFEBE40090AF74 /* NTESLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		900CBD3A20BFF2790090AF74 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				90946912211151EE008F3679 /* UI */,
+				9094691121114AC8008F3679 /* Manager */,
+				90DFB36D20C13C8F002C5CD3 /* Util */,
+				900CBD3B20BFF2C70090AF74 /* Category */,
+				900CBD1620BFD6390090AF74 /* Config */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		900CBD3B20BFF2C70090AF74 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				90550A6F20CA51B300757D7D /* NSDictionary+NTESJson.h */,
+				90550A7020CA51B300757D7D /* NSDictionary+NTESJson.m */,
+				900CBD3D20BFF35E0090AF74 /* NSString+NTES.h */,
+				900CBD3C20BFF35E0090AF74 /* NSString+NTES.m */,
+				908661EF20D9F11100F2329A /* NSView+NTESToast.h */,
+				908661F020D9F11100F2329A /* NSView+NTESToast.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9083B0D120CF671200C0AA19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9083B0D220CF671200C0AA19 /* Sounds */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9083B0D220CF671200C0AA19 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9083B0D320CF671200C0AA19 /* video_connect_chat_tip_sender.aac */,
+				9083B0D420CF671200C0AA19 /* video_chat_tip_OnCall.aac */,
+				9083B0D520CF671200C0AA19 /* video_chat_tip_sender.aac */,
+				9083B0D620CF671200C0AA19 /* video_chat_tip_HangUp.aac */,
+				9083B0D720CF671200C0AA19 /* message.wav */,
+				9083B0D820CF671200C0AA19 /* video_chat_tip_receiver.aac */,
+				9083B0D920CF671200C0AA19 /* video_chat_tip_onTimer.aac */,
+				9083B0DA20CF671200C0AA19 /* video_chat_push.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9094691121114AC8008F3679 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				90809826210570B400331E21 /* NTESLogManager.h */,
+				90809825210570B300331E21 /* NTESLogManager.m */,
+				90DFB36820C13BAE002C5CD3 /* NTESLoginManager.h */,
+				90DFB36A20C13BAE002C5CD3 /* NTESLoginManager.m */,
+				90F989F320C78CC900069ACB /* NTESNotificationCenter.h */,
+				90F989F420C78CC900069ACB /* NTESNotificationCenter.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		90946912211151EE008F3679 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				90DFB33A20C12005002C5CD3 /* NetChat */,
+				900CBD3920BFEBFF0090AF74 /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9095C39521193ABB00FDF988 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				9095C39621193ABB00FDF988 /* NIMSDK */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		9095C39621193ABB00FDF988 /* NIMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9095C39721193ABB00FDF988 /* NIMAVChat-macOS */,
+				9095C39D21193ABB00FDF988 /* NIMSDK-macOS */,
+			);
+			path = NIMSDK;
+			sourceTree = "<group>";
+		};
+		9095C39721193ABB00FDF988 /* NIMAVChat-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9095C39821193ABB00FDF988 /* Resources */,
+				9095C39A21193ABB00FDF988 /* Libs */,
+				9095C39C21193ABB00FDF988 /* NIMAVChat.framework */,
+			);
+			path = "NIMAVChat-macOS";
+			sourceTree = "<group>";
+		};
+		9095C39821193ABB00FDF988 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9095C39921193ABB00FDF988 /* NMCVideoFilter.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9095C39A21193ABB00FDF988 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				9095C39B21193ABB00FDF988 /* NVS.framework */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		9095C39D21193ABB00FDF988 /* NIMSDK-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9095C39E21193ABB00FDF988 /* NIMSDK.framework */,
+			);
+			path = "NIMSDK-macOS";
+			sourceTree = "<group>";
+		};
+		90DFB33A20C12005002C5CD3 /* NetChat */ = {
+			isa = PBXGroup;
+			children = (
+				90072C4220C51FDD004B64BA /* View */,
+				90DFB33E20C12005002C5CD3 /* NTESSelectViewController.h */,
+				90DFB33B20C12005002C5CD3 /* NTESSelectViewController.m */,
+				90DFB33C20C12005002C5CD3 /* NTESSelectViewController.xib */,
+				90DFB34020C12005002C5CD3 /* NTESMainWindowController.h */,
+				90DFB33D20C12005002C5CD3 /* NTESMainWindowController.m */,
+				90DFB33F20C12005002C5CD3 /* NTESMainWindowController.xib */,
+				90DFB35520C12AA0002C5CD3 /* NTESMeetingChatViewController.h */,
+				90DFB35620C12AA0002C5CD3 /* NTESMeetingChatViewController.m */,
+				90DFB35720C12AA0002C5CD3 /* NTESMeetingChatViewController.xib */,
+				90F989FB20C7C58B00069ACB /* NTESP2PChatViewController.h */,
+				90F989FC20C7C58B00069ACB /* NTESP2PChatViewController.m */,
+				90F989FD20C7C58B00069ACB /* NTESP2PChatViewController.xib */,
+				90F989F620C7C2B000069ACB /* NTESP2PAudioChatViewController.h */,
+				90F989F720C7C2B000069ACB /* NTESP2PAudioChatViewController.m */,
+				90F989F820C7C2B000069ACB /* NTESP2PAudioChatViewController.xib */,
+				90072C5C20C533D1004B64BA /* NTESP2PVideoChatViewController.h */,
+				90072C5D20C533D1004B64BA /* NTESP2PVideoChatViewController.m */,
+				90072C5E20C533D1004B64BA /* NTESP2PVideoChatViewController.xib */,
+				90F989EE20C78B1700069ACB /* NTESChatNotificationController.h */,
+				90F989EF20C78B1700069ACB /* NTESChatNotificationController.m */,
+				90F989F020C78B1700069ACB /* NTESChatNotificationController.xib */,
+			);
+			path = NetChat;
+			sourceTree = "<group>";
+		};
+		90DFB36D20C13C8F002C5CD3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				90DFB37120C142CF002C5CD3 /* NTESWindowContext.h */,
+				90DFB37220C142CF002C5CD3 /* NTESWindowContext.m */,
+				9055F6F520C8CD2200757D7D /* NTESTimerHolder.h */,
+				9055F6F420C8CD2100757D7D /* NTESTimerHolder.m */,
+				90DFB36E20C13CA5002C5CD3 /* NTESFileLocationHelper.h */,
+				90DFB36F20C13CA5002C5CD3 /* NTESFileLocationHelper.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BC9AEB4C3BE5898C3AC51F5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90DFB34D20C12185002C5CD3 /* libstdc++.tbd */,
+				90DFB34B20C12170002C5CD3 /* libc++.tbd */,
+				A943E39F0439BB95CAA83ECE /* libPods-NIMmacOSAVChatDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		900CBCDA20BF9A4F0090AF74 /* NIMmacOSAVChatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900CBD0220BF9A500090AF74 /* Build configuration list for PBXNativeTarget "NIMmacOSAVChatDemo" */;
+			buildPhases = (
+				1BCCE6766F5F886C01AAC304 /* [CP] Check Pods Manifest.lock */,
+				900CBCD720BF9A4F0090AF74 /* Sources */,
+				900CBCD820BF9A4F0090AF74 /* Frameworks */,
+				900CBCD920BF9A4F0090AF74 /* Resources */,
+				900CBD1120BFA21E0090AF74 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NIMmacOSAVChatDemo;
+			productName = NIMmacOSAVChatDemo;
+			productReference = 900CBCDB20BF9A4F0090AF74 /* NIMmacOSAVChatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900CBCD320BF9A4F0090AF74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = netease;
+				TargetAttributes = {
+					900CBCDA20BF9A4F0090AF74 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 900CBCD620BF9A4F0090AF74 /* Build configuration list for PBXProject "NIMmacOSAVChatDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 900CBCD220BF9A4F0090AF74;
+			productRefGroup = 900CBCDC20BF9A4F0090AF74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				900CBCDA20BF9A4F0090AF74 /* NIMmacOSAVChatDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		900CBCD920BF9A4F0090AF74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9083B0E120CF671300C0AA19 /* video_chat_tip_onTimer.aac in Resources */,
+				90DFB34420C12006002C5CD3 /* NTESMainWindowController.xib in Resources */,
+				90DFB34920C12010002C5CD3 /* NTESLaunchWindowController.xib in Resources */,
+				9083B0DD20CF671300C0AA19 /* video_chat_tip_sender.aac in Resources */,
+				90F989F220C78B1700069ACB /* NTESChatNotificationController.xib in Resources */,
+				9095C39F21193ABB00FDF988 /* NMCVideoFilter.bundle in Resources */,
+				90F989FA20C7C2B100069ACB /* NTESP2PAudioChatViewController.xib in Resources */,
+				90DFB35920C12AA0002C5CD3 /* NTESMeetingChatViewController.xib in Resources */,
+				90DFB34220C12006002C5CD3 /* NTESSelectViewController.xib in Resources */,
+				900CBCE220BF9A500090AF74 /* Assets.xcassets in Resources */,
+				90F989FF20C7C58B00069ACB /* NTESP2PChatViewController.xib in Resources */,
+				90550A7620CA72CC00757D7D /* NTESMeetingCollectionViewItem.xib in Resources */,
+				9083B0DF20CF671300C0AA19 /* message.wav in Resources */,
+				9083B0E220CF671300C0AA19 /* video_chat_push.mp3 in Resources */,
+				900CBD3720BFEBE40090AF74 /* NTESLoginViewController.xib in Resources */,
+				9083B0E020CF671300C0AA19 /* video_chat_tip_receiver.aac in Resources */,
+				9083B0DB20CF671300C0AA19 /* video_connect_chat_tip_sender.aac in Resources */,
+				90072C6020C533D1004B64BA /* NTESP2PVideoChatViewController.xib in Resources */,
+				9083B0DC20CF671300C0AA19 /* video_chat_tip_OnCall.aac in Resources */,
+				900CBCE520BF9A500090AF74 /* MainMenu.xib in Resources */,
+				9083B0DE20CF671300C0AA19 /* video_chat_tip_HangUp.aac in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BCCE6766F5F886C01AAC304 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NIMmacOSAVChatDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		900CBCD720BF9A4F0090AF74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909EF32220FD82C8004D6F00 /* NTESButtonCell.m in Sources */,
+				90F989F920C7C2B100069ACB /* NTESP2PAudioChatViewController.m in Sources */,
+				9055F6F620C8CD2200757D7D /* NTESTimerHolder.m in Sources */,
+				90DFB37320C142CF002C5CD3 /* NTESWindowContext.m in Sources */,
+				90DFB34320C12006002C5CD3 /* NTESMainWindowController.m in Sources */,
+				90F989F520C78CC900069ACB /* NTESNotificationCenter.m in Sources */,
+				90DFB35820C12AA0002C5CD3 /* NTESMeetingChatViewController.m in Sources */,
+				90072C5F20C533D1004B64BA /* NTESP2PVideoChatViewController.m in Sources */,
+				90DFB37020C13CA5002C5CD3 /* NTESFileLocationHelper.m in Sources */,
+				90072C4520C51FFA004B64BA /* NTESRemoteVideoView.m in Sources */,
+				90DFB34820C12010002C5CD3 /* NTESLaunchWindowController.m in Sources */,
+				90809827210570B400331E21 /* NTESLogManager.m in Sources */,
+				900CBCE820BF9A500090AF74 /* main.m in Sources */,
+				900CBD4220BFF35E0090AF74 /* NSString+NTES.m in Sources */,
+				90DFB34120C12006002C5CD3 /* NTESSelectViewController.m in Sources */,
+				900CBD1F20BFD6390090AF74 /* NTESDemoConfig.m in Sources */,
+				90550A7520CA72CC00757D7D /* NTESMeetingCollectionViewItem.m in Sources */,
+				90F989F120C78B1700069ACB /* NTESChatNotificationController.m in Sources */,
+				909EF32520FDD48A004D6F00 /* NTESPopUpButton.m in Sources */,
+				900CBCE020BF9A4F0090AF74 /* AppDelegate.m in Sources */,
+				900CBD3620BFEBE40090AF74 /* NTESLoginViewController.m in Sources */,
+				90F989FE20C7C58B00069ACB /* NTESP2PChatViewController.m in Sources */,
+				908661F120D9F11100F2329A /* NSView+NTESToast.m in Sources */,
+				90550A7120CA51B300757D7D /* NSDictionary+NTESJson.m in Sources */,
+				90DFB36C20C13BAF002C5CD3 /* NTESLoginManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		900CBCE320BF9A500090AF74 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				900CBCE420BF9A500090AF74 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		900CBD0020BF9A500090AF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		900CBD0120BF9A500090AF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		900CBD0320BF9A500090AF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07827FE438DD32B874BFDC67 /* Pods-NIMmacOSAVChatDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../NIMAVChat/NIMAVChat/Vendors/MacLibs/\"",
+					"$(PROJECT_DIR)/NIMmacOSAVChatDemo/Vendors/NIMSDK/NIMAVChat-macOS/Libs",
+					"$(PROJECT_DIR)/NIMmacOSAVChatDemo/Vendors/NIMSDK/NIMAVChat-macOS",
+					"$(PROJECT_DIR)/NIMmacOSAVChatDemo/Vendors/NIMSDK/NIMSDK-macOS",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/NIMmacOSAVChatDemo/NIMmacOSAVChatDemo.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = NIMmacOSAVChatDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NIMmacOSAVChatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		900CBD0420BF9A500090AF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02859FC13B6BF8DFAF59EF7F /* Pods-NIMmacOSAVChatDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../NIMAVChat/NIMAVChat/Vendors/MacLibs/\"",
+					"$(PROJECT_DIR)/NIMmacOSAVChatDemo/Vendors/NIMSDK/NIMAVChat-macOS/Libs",
+					"$(PROJECT_DIR)/NIMmacOSAVChatDemo/Vendors/NIMSDK/NIMAVChat-macOS",
+					"$(PROJECT_DIR)/NIMmacOSAVChatDemo/Vendors/NIMSDK/NIMSDK-macOS",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/NIMmacOSAVChatDemo/NIMmacOSAVChatDemo.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = NIMmacOSAVChatDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NIMmacOSAVChatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		900CBCD620BF9A4F0090AF74 /* Build configuration list for PBXProject "NIMmacOSAVChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900CBD0020BF9A500090AF74 /* Debug */,
+				900CBD0120BF9A500090AF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900CBD0220BF9A500090AF74 /* Build configuration list for PBXNativeTarget "NIMmacOSAVChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900CBD0320BF9A500090AF74 /* Debug */,
+				900CBD0420BF9A500090AF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 900CBCD320BF9A4F0090AF74 /* Project object */;
+}
