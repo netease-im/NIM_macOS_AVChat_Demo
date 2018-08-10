@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -487,6 +487,7 @@
 				TargetAttributes = {
 					900CBCDA20BF9A4F0090AF74 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -496,7 +497,7 @@
 				};
 			};
 			buildConfigurationList = 900CBCD620BF9A4F0090AF74 /* Build configuration list for PBXProject "NIMmacOSAVChatDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -737,10 +738,7 @@
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/NIMmacOSAVChatDemo/NIMmacOSAVChatDemo.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = NIMmacOSAVChatDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NIMmacOSAVChatDemo;
@@ -764,10 +762,7 @@
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/NIMmacOSAVChatDemo/NIMmacOSAVChatDemo.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = NIMmacOSAVChatDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NIMmacOSAVChatDemo;
